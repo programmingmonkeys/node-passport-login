@@ -1,0 +1,49 @@
+{
+  "name": "node-passport-login",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "private": true,
+  "scripts": {
+    "importEXT": "if [ -f vscode-extensions.txt ]; then cat vscode-extensions.txt | xargs -n 1 code --install-extension; fi",
+    "exportEXT": "code --list-extensions > vscode-extensions.txt",
+    "dev": "NODE_ENV=development nodemon app.js",
+    "prod": "NODE_ENV=production nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codingChewie/node-passport-login.git"
+  },
+  "keywords": [],
+  "author": "codingChewie",
+  "bugs": {
+    "url": "https://github.com/codingChewie/node-passport-login/issues"
+  },
+  "homepage": "https://github.com/codingChewie/node-passport-login#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-ejs-layouts": "^2.5.0",
+    "express-session": "^1.15.6",
+    "mongoose": "^5.7.5",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.14.3",
+    "nodemon": "^1.19.2",
+    "prettier": "^1.18.2"
+  },
+  "engines": {
+    "node": "^10"
+  }
+}
